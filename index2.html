@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<head>
+    <title>alchemilla otherworld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/world.png">
+</head>
+<body">
+
+<style>
+
+    * {
+        font-family: "w95fa";
+        color: white;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+    }
+
+    body {
+        /*background: linear-gradient(to top, rgb(172, 226, 168) 0%, rgba(10, 192, 209, 0) 100%);*/
+        background-color: rgb(0, 0, 0);
+        /*background-image: url(images/BlackThatch.png);*/
+        height: 100%;
+        margin: 0;
+        /*background-repeat: no-repeat;*/
+        background-attachment: fixed;
+    }
+
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    span {
+        color: rgb(0, 0, 0);
+    }
+
+    .window {
+        background: linear-gradient(0deg, rgb(160, 192, 172) 10%, rgb(10, 96, 107) 10%, rgb(190, 212, 196) 100%);
+        border-radius: 15px 15px 0 0;
+        text-align: center;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    .scanlines-overlay {
+        position: absolute; /* Fixed to cover the entire viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('images/scanlines.gif') no-repeat center center;
+        background-size: cover; /* Make sure the GIF covers the entire area */
+        pointer-events: none; /* Make sure it doesn't interfere with interactions */
+        z-index: 1000; /* Ensure it is on top of other content */
+        opacity: 0.1;
+    }
+
+</style>
+
+<div class="scanlines-overlay" style="border:none;"></div>
+
+<center>
+    <table style="border: 2px solid rgb(10, 96, 107); height: 20px; border-radius: 0 0 0 0; margin-top: 20px; background: linear-gradient(0deg, rgb(160, 192, 172) 10%, rgb(10, 96, 107) 10%, rgb(190, 212, 196) 100%);">
+        <tr>
+            <td>
+                <center>
+                    <div style="width: 1000px;">                    
+                        
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <table style="border: 2px solid rgb(10, 96, 107); height: 70px; background-color: rgb(156, 186, 223); border-top: none; border-bottom: none; background-image: url(images/day.gif);">
+        <tr>
+            <td>
+                <center>
+                    <div style="width: 1000px;">                    
+                        <img src="images/alchemilla otherworld.gif" width="800px">
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <!--<table style="border: 2px solid rgb(197, 192, 137); border-top: none; border-bottom: none; height: 30px; background: linear-gradient(0deg, rgb(192, 221, 168) 0%, rgb(197, 192, 137) 10%, rgb(219, 240, 185) 100%);">
+        <tr>
+            <td>
+                <center>
+                    <div style="width: 1000px;">
+                        <img src="Neocities_Site_Old/wii.gif">
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>-->
+    <table style="border: 2px solid rgb(10, 96, 107); border-top: none; height: 30px; background: linear-gradient(0deg, rgb(160, 192, 172) 10%, rgb(10, 96, 107) 10%, rgb(190, 212, 196) 100%);">
+        <tr>
+            <td>
+                <center>
+                    <div style="width: 1000px; text-align: center; vertical-align: middle; margin-top: 5px;">
+                            <img src="images/archlinux.gif">
+                            <img src="images/a115.jpg">
+                            <img src="images/a109.gif">
+                            <img src="images/b15.gif">
+                            <img src="images/f21.jpg">
+                            <img src="images/e7.gif">
+                            <img src="images/neocities-alpha.gif">
+                            <img src="Neocities_Site_Old/anythingbut.gif">
+                            <img src="Neocities_Site_Old/miku.gif">
+                            <img src="Neocities_Site_Old/bestviewedcomp.gif">
+                        
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <table style="border: 2px solid rgb(10, 96, 107); border-bottom: none; height: 350px; background-color: rgb(6, 25, 49); background-image: url('images/gridgray.png');">
+        <tr>
+            <td style="">
+                <center>
+                    <div>
+                        <!--calendar-->
+                        <div>
+                            <div style="width: 170px; height: 170px; border: 0px solid rgb(10, 96, 107); margin-bottom: 0px;">
+                                <style>
+                                    #calendar th, #calendar td {
+                                        height: 24px;
+                                        width: 24px;
+                                        text-align: center;
+                                        border: solid 1px rgb(0, 0, 0);
+                                        color: black;
+                                        font-family: 'ds';
+                                    }
+                                    #calendar th {
+                                        color: white;
+                                    }
+
+                                    #calendar td {
+                                        background-color: rgb(255, 255, 255);
+                                    }
+                                </style>
+                                <table id="calendar" style="border-collapse: collapse; font-size: 20px; border: 1px solid black;">
+                                    <tr>
+                                        <th style="background-color: #d90406;">Su</th>
+                                        <th style="background-color: #686868;">Mo</th>
+                                        <th style="background-color: #686868;">Tu</th>
+                                        <th style="background-color: #686868;">We</th>
+                                        <th style="background-color: #686868;">Th</th>
+                                        <th style="background-color: #686868;">Fr</th>
+                                        <th style="background-color: #0746c7;">Sa</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #e9a8e7;"> </td>
+                                        <td style="background-color: rgb(255, 255, 255);"> </td>
+                                        <td style="background-color: #ffffff;"> </td>
+                                        <td style="background-color: rgb(255, 255, 255);"> </td>
+                                        <td style="background-color: rgb(255, 255, 255);">1</td>
+                                        <td style="background-color: rgb(255, 255, 255);">2</td>
+                                        <td style="background-color: #7fb0ec;">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #e9a8e7;">4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td style="background-color: #7fb0ec;">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #e9a8e7;">11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td style="background-color: #7fb0ec;">17</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #e9a8e7;">18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td style="background-color: #7fb0ec;">24</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #e9a8e7;">25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td style="background-color: #7fb0ec;">31</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="width: 220px; height: 175px; background-color: #e8fcff; border-radius: 15px 15px 5px 5px; border: 1px solid rgb(10, 96, 107);">
+                            
+                            <style>
+                                .music-button {
+                                    background-color: rgb(255, 255, 255); 
+                                    background: linear-gradient(180deg, rgb(255, 254, 254), rgb(163, 163, 163), rgb(248, 241, 241));
+                                    border-radius: 5px 5px 5px 5px;
+                                    height: 32px;
+                                    width: 60px;
+                                }
+                            </style>
+                            <!--MUSIC PLAYER-->
+                            <div class="window">
+                                
+                            </div>
+                            <div style="color: black;">
+                                Now Playing:
+                                <br>
+                                <marquee style="color: black;" id="marquee">Nothing</marquee>
+                                <br>
+                                <input id="progressBar" type="range" value="0" max="100" step="0.1" style="width: 90%;">
+                                <button class="music-button" id="back"><img style="height: 25px;" src="images/prev.png"></button>
+                                <button class="music-button" id="playPause"><img style="height: 25px;" src="images/play.png"></button>
+                                <button class="music-button" id="skip"><img style="height: 25px;" src="images/next.png"></button>
+                                
+                                <script src="newmusicplayer.js"></script> <!-- Link your JavaScript file -->
+                                <br>
+                            </div>
+                        </div>  
+                    </div>
+                </center>
+            </td>
+            <td>
+                <div>
+                    <center>
+                        <div style="background-color: #e8fcff; width: 532px; height: 350px; border-radius: 15px 15px 15px 15px; border: 1px solid rgb(10, 96, 107); text-align: left; ">
+                            
+                            <div style="border-radius: 15px 15px 5px 5px;">
+                                <div class="window">
+                                    <img style="width: 100%;" src="images/sparkle_divider.gif">
+                                </div>
+                                <div style="color: black; margin: 5px;">
+                                    <div  style="color: black; text-decoration:underline; font-weight: 750;">
+                                        What is this?
+                                    </div>
+                                    This is my personal website for learning html/css. It doesn't really serve any purpose except to fill with random stuff I think is cool. I am a college student from the United States and some of my interests are geopolitics, video games, language learning, technology and programming. I speak English, Spanish and I am learning Japanese. I'm also interested in and an enthusiast of the free software movement and internet privacy. I have a passion for 2000s nostalgia and internet aesthetics. 
+                                    <div  style="color: black; text-decoration:underline; font-weight: 750;">
+                                        Enjoy your stay !
+                                    </div>
+                                    <center>
+                                    <div>
+                                        <br>
+                                        <img style="height: 80px;" src="images/brofist.gif">
+                                        <img style="height: 80px;" src="images/nyan.gif">
+                                        <img style="height: 80px;" src="images/Stamp_Blue_Exorcist.gif">
+                                    </div>
+                                    <button style="background-color: rgb(255, 255, 255); background: linear-gradient(180deg, rgb(255, 254, 254), rgb(163, 163, 163), rgb(248, 241, 241));"><a href="index.html">switch homepage</a></button>
+                                    </center>
+                                    <!--<img style="position:absolute; height: 200px; right: 375px; top: 286px;" src="images/girl.png">-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </center>
+                </div>
+            </td>
+            <td>
+                <center>
+                    <div style="width: 235px; height: 350px;">
+
+                        <!--Navbar CSS-->
+                        <style>
+                            .nav-header {
+                                height: 30px; 
+                                background: linear-gradient(0deg, rgb(160, 192, 172) 10%, rgb(10, 96, 107) 10%, rgb(190, 212, 196) 100%);
+                                border-radius: 5px 5px 5px 5px;
+                                color: black;
+                            }   
+
+                            .nav-link {
+                                background: linear-gradient(180deg, rgb(255, 254, 254), rgb(163, 163, 163), rgb(248, 241, 241));
+                                color: black;
+                                border-radius: 3px 3px 3px 3px;
+                                height: 23px;
+                                border: 1px solid rgb(6, 102, 97);
+                            }
+
+                            .nav-link:hover {
+                                text-decoration: underline;
+                            }
+
+                        </style>
+
+                        <div class="nav-header">
+                            Navigation
+                        </div>
+                        <a href="about.html">
+                            <div class="nav-link">
+                                About Me
+                            </div>
+                        </a>
+                        <a href="links.html">
+                            <div class="nav-link">
+                                Links
+                            </div>
+                        </a>
+                        <a href="https://neocities.org/site/alchemillaotherworld">
+                            <div class="nav-link">
+                                Neocities
+                            </div>
+                        </a>
+                        <a href="shrines.html">
+                            <div class="nav-link">
+                                Resources
+                            </div>
+                        </a>
+                        <div class="nav-header">
+                            Other
+                        </div>
+                        <a href="blog.html">
+                            <div class="nav-link">
+                                Blog
+                            </div>
+                        </a>
+                        <a href="old_homepage.html">
+                            <div class="nav-link">
+                                Old Homepages
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="nav-link">
+                                Shrines
+                            </div>
+                        </a>
+                        <a href="friends.html">
+                            <div class="nav-link">
+                                Friends
+                            </div>
+                        </a>
+                        <a href="media/media_portal.html">
+                            <div class="nav-link">
+                                Media
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="nav-link">
+                                Contact
+                            </div>
+                        </a>
+                        <div style="margin-top: 5px;">
+                            <img src="images/Censor_14c.gif">
+                        </div>
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <table style="border: 2px solid rgb(10, 96, 107); height: 20px; border-radius: 0 0 0 0; background: linear-gradient(0deg, rgb(160, 192, 172) 10%, rgb(10, 96, 107) 10%, rgb(190, 212, 196) 100%);">
+        <tr>
+            <td>
+                <center>
+                    <div style="width: 1000px;">                    
+                        
+                    </div>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <table style="border: 2px solid rgb(10, 96, 107); height: 325px; width: 1010px; background-color: rgb(6, 25, 49); border-top: none; background-image: url(images/gridgray.png);">
+        <tr>
+            <td style="width: 222px;">
+                <center>
+                    <div style="border: 5px solid rgb(10, 96, 107); height: 300px; width: 200px; border-radius: 15px 15px 15px 15px; background-color: #6c94c5; overflow-y: auto;">
+                        <div>
+                            <br>
+                            <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+                            <p style="padding: 0px; margin: 0px; font-size: 11px;">null webring</p>
+                            <br>
+                        </div> 
+                        <div>
+                            <!-- <img src="images/metalhead.gif">
+                            <img src="images/weird.gif">
+                            <img src="images/lonely.gif">
+                            <img src="images/capricorn.gif"> -->
+                            <img src="images/american.png">
+                            <img src="images/midwest-emo.png">
+                            <img src="images/electronic.png">
+                            <img src="images/emo.png">
+                            <img src="images/pc.png">
+                            <img src="images/poke.png">
+                            <img src="images/runescape.png">
+                            <img src="images/skyrim.png">
+                            <img src="images/splatoon.png">
+                            <img src="images/ssbu.png">
+                            <img src="images/switch.png">
+                            <img src="images/terraria.png">
+                            <img src="images/yugioh.png">
+                            <img src="images/liminal.png">
+                            <img src="images/loz.png">
+                            <img src="images/mc.png">
+                            <img src="images/webcore.png">
+                        </div>
+                    </div>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <div style="border: solid 5px rgb(10, 96, 107); height: 100px; width: 520px; border-radius: 20px 20px 20px 20px; background-color: #e8fcff; text-align: left; overflow-y: auto;">
+                        <div style="margin: 15px; color: rgb(165, 4, 4);">
+                            <u style="color: black;">Updates</u> <img src="images/starspin.webp">
+                            <br>
+                            February 21st, 2025 - Added <a href="friends.html">friends</a> page, Alt homepage.
+                            <br>
+                            January 30th, 2025 - Homepage Makeover, Blog Page
+                            <br>
+                            October 19th 2024 - Added New Things to Homepage
+                            <br>
+                            August 16th 2024 - New Homepage
+                            <br>
+                            May 21st 2024 - Completely re-coded the homepage.
+                            <br>
+                            May 21st 2024 - Added the AOC Records Page.
+                            <br>
+                            April 10th 2024 - Updated the homepage.
+                            <br>
+                            April 9th 2024 - Created the site.
+                        </div>
+                    </div>
+                    <br>
+                    <div style="border: solid 5px rgb(10, 96, 107); height: 100px; width: 520px; border-radius: 20px 20px 20px 20px; background-color: #e8fcff; text-align: left; overflow-y: auto;">
+                        <div style="margin: 15px; color: rgb(165, 4, 4);">
+                            <u style="color: black;">Recent Blog Posts</u> <img src="images/starspin.webp">
+                            <br>
+                            <a href="blog.html"><u style="color: #f5080c;">2/21/2025</u></a>
+                            <br>
+                            <a href="blog.html"><u style="color: #f5080c;">1/31/2025</u></a>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <!-- FC2 Counter  Starts here -->
+                         <br>
+                         You're Visitor Number:
+                         <br>
+                        <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=40210678&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=40210678&main=1" /></noscript>
+                        <!-- FC2 Counter  Ends here -->
+                    </div>
+                </center>  
+            </td>
+            <td style="width: 235px;">
+                <center>
+                    <iframe src="https://www3.cbox.ws/box/?boxid=3540050&boxtag=U88IF6" style=" border: 5px solid rgb(10, 96, 107); border-radius: 15px 15px 15px 15px;" width="200px" height="300" allowtransparency="no" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" style="border: none;"></iframe>
+                </center>  
+            </td>
+        </tr>
+        <table style="border: 2px solid rgb(10, 96, 107); height: 20px; border-radius: 0 0 0 0; margin-top: 0px; background: linear-gradient(0deg, rgb(160, 192, 172) 10%, rgb(10, 96, 107) 10%, rgb(190, 212, 196) 100%);">
+            <tr>
+                <td>
+                    <center>
+                        <div style="width: 1000px;">                    
+                            <img src="images/p3blinkie.gif">
+                            <img src="images/misswinter.gif">
+                            <img src="images/miku.gif" style="width: 150px;">
+                            <img src="images/v58.gif">
+                            <img src="images/flutter.gif" style="width: 150px;">
+                        </div>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </table>
+</center>
+
+<center>
+<br>
+<img src="images/worldwidewebbadge.gif">
+</center>
+
+<!--
+
+                        <br>
+                        <img src="images/metalhead.gif">
+                        <img src="images/weird.gif">
+                        <img src="images/lonely.gif">
+                        <img src="images/capricorn.gif">
+                        <img src="images/american.png">
+                        <img src="images/midwest-emo.png">
+                        <img src="images/electronic.png">
+                        <img src="images/emo.png">
+                        <img src="images/pc.png">
+                        <img src="images/poke.png">
+                        <img src="images/runescape.png">
+                        <img src="images/skyrim.png">
+                        <img src="images/splatoon.png">
+                        <img src="images/ssbu.png">
+                        <img src="images/switch.png">
+                        <img src="images/terraria.png">
+                        <img src="images/yugioh.png">
+                        <img src="images/liminal.png">
+                        <img src="images/loz.png">
+                        <img src="images/mc.png">
+                        <img src="images/webcore.png">
+                        -->
+
+                    
+
+</body>

@@ -1,0 +1,200 @@
+@font-face { font-family: "IBM VGA 8x16"; src: url("IBM_VGA_8x16.woff") format('woff'); }
+
+body {
+	font-family: "IBM VGA 8x16", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color: #130000;
+}
+.maintext {
+	font-family: "IBM VGA 8x16", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+}
+.maintextbold {
+	font-family: "IBM VGA 8x16", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #888;
+}
+
+#top {
+	height: 100px;
+	width: 930px;
+	border: 1px solid #888;
+	padding: 1px;
+}
+#container {
+	width: 930px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+
+#navigation {
+	width: 160px;
+	float: left;
+	border: 1px solid #CCC;
+	background-image: url(/web/20101221032741im_/http://silenthillmemories.net/main/main_pics/back_nav.jpg);
+	padding: 1px;
+}
+
+#main {
+	width: 922px;
+	border: 1px solid #888;
+	background-color: #121212;
+	float: left;
+	padding: 5px;
+	margin-bottom: 15px;
+	margin-top: 1px;
+}
+
+
+#title {
+	width: 742px;
+	border: 1px solid #CCC;
+	float: right;
+	height: 30px;
+	padding: 1px;
+	font-family: "IBM VGA 8x16", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	color: #CCC;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 3px;
+	margin-bottom: 4px;
+	margin-left: 3px;
+	margin-top: 2px;
+}
+#content {
+	width: 752px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#banner_up {
+	width: 742px;
+	height: 94px;
+	float: right;
+	margin-right: 3px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	padding-top: 5px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+
+}
+
+#banner_bottom {
+	float: right;
+	width: 748px;
+	padding: 1px;
+	height: 94px;
+}
+#bottom {
+	float: right;
+	width: 748px;
+	padding: 1px;
+}
+
+
+#bottom2 {
+	padding: 1px;
+	height: 16px;
+	border: 1px solid #CCC;
+	margin-top: 5px;
+	text-align: center;
+	margin-right: 2px;
+}
+
+.imageborder {
+	border: 1px solid #CCC;
+	padding: 1px;
+}
+
+.imageborder2 {
+	border: 1px solid #CCC;
+	margin-left: 3px;
+	padding: 1px;
+	margin-right: 3px;
+	margin-bottom: 1px;
+}
+.imageborder2b {
+	padding: 1px;
+	margin-right: 3px;
+	border: 1px solid #CCC;
+	margin-left: 3px;
+}
+.imageborder2c {
+	border: 1px solid #CCC;
+	margin-right: 3px;
+	margin-bottom: 4px;
+	margin-left: 3px;
+	padding: 1px;
+}
+
+.imageborder3 {
+	border: 1px solid #CCC;
+	padding: 1px;
+	margin-bottom: 2px;
+}
+
+
+.subtitle {
+	background-color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	padding: 1px;
+}
+.subtitle2 {
+	background-color: #CCC;
+	padding: 1px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+.bottom {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #CCC;
+	background-color: #666666;
+	text-align: center;
+	height: 16px;
+	padding: 1px;
+}
+.bottom2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #CCC;
+	margin-right: 2px;
+	border: 1px solid #CCC;
+	padding: 1px;
+}
+.gallery {
+	padding: 1px;
+	border: 1px solid #CCC;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+.gallery2 {
+	border: 1px solid #CCC;
+	padding: 1px;
+}
+
+.gallery:hover {
+	padding: 1px;
+	border: 1px solid #800000;
+}
+
+.gallery2:hover {
+	padding: 1px;
+	border: 1px solid #800000;
+}

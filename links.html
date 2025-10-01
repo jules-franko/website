@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>links</title>
+  </head>
+  <body>
+    <style type="text/css">
+
+      @font-face {
+        font-family: 'w95fa';
+        src: url(w95fa.woff) format("truetype"); 
+  }
+      
+      * {
+        font-family: "w95fa";
+        color: white;
+        
+      }
+
+      .window {
+        background: linear-gradient(0deg, #d1c7c7 10%, #75a7d6 100%, #0e6e52 10%);
+        border-radius: 0px 0px 0 0;
+        text-align: center;
+        height: 30px;
+        border: 2px solid white;
+        width: 100%;
+      }
+
+      body {
+        background-color: rgba(236, 236, 236, 0.726);
+        background-image: url(images/gridgray.png);
+      }
+
+      a {
+        color: rgb(96, 18, 133);
+
+      }
+
+      .scanlines-overlay {
+          position: absolute; /* Fixed to cover the entire viewport */
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url('images/scanlines.gif') no-repeat center center;
+          background-size: cover; /* Make sure the GIF covers the entire area */
+          pointer-events: none; /* Make sure it doesn't interfere with interactions */
+          z-index: 1000; /* Ensure it is on top of other content */
+          opacity: 0.1;
+    }
+
+    .link {
+        border: 1px solid black;
+        border-radius: 5px;
+        color: #854f9e;
+        color: rgb(6, 104, 47);
+    }
+
+    .button {
+        border: 3px solid black;
+        border-radius: 5px;
+        border-color: #2e89b3;
+        box-shadow: 0 0 10px #6ea516;
+    }
+
+    </style>
+
+    <div class="scanlines-overlay" style="border:none;"></div>
+
+    <center>
+      <div style="background: linear-gradient(0deg, #d1c7c7 10%, #75b7d6 100%, #ffffff 10%); border: solid 2px black; width: 700px; border-radius: 15px; height: 20px; margin-top: 100px; box-shadow: 0 0 10px #166ca5;">
+      <span style="float: left; margin-left: 10px; color: #ffffff;">links</span>
+      </div>
+
+      <div style="border: 2px solid rgb(0, 0, 0); margin-top: 10px; height: 450px; width: 700px; border-radius: 15px 15px 15px 15px;">
+
+        <!--Left Bar-->
+        <div style="width: 150px; float: left; margin: 5px; border: 0px solid rgb(0, 0, 0);">
+          <div style="border: solid 2px rgb(0, 0, 0); height: 70px; border-radius: 15px 0 0 0;">
+            <div class="window" style="border: none; border-bottom: solid 2px rgb(0, 0, 0); border-radius: 15px 0px 0 0;">
+
+            </div>
+            <div>
+              <!-- <a href="index.html"> -->
+                <a href="index.html"><button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+                  retun to index
+                </button></a>
+              <!-- </a> -->
+            </div>
+          </div>
+
+          <div style="background-color: rgb(188, 224, 235); border: solid 2px rgb(0, 0, 0); margin-top:5px; height: 355px; border-radius: 0px 0px 0px 15px; background-image: url('images/blutiger.jpg'); background-size: 350px; background-position: -445px -130px;">
+            <div class="window" style="border: none; border-bottom: solid 2px rgb(0, 0, 0);">
+
+            </div>
+            <br>
+            <br>
+          </div>
+
+
+        </div>
+
+        <!--Main-->
+        <div style="background-color: rgb(188, 195, 235); float: right; border: 2px solid rgb(0, 0, 0); margin: 5px; width: 525px; height: 434px; border-radius: 0px 15px 15px 0;">
+          <div style="margin: 10px; overflow-y: auto; text-align: left;">
+            
+            <span style="color: black;">
+            
+            <img src="images/starspin.webp">software i use
+
+                <br>
+				-<a href="https://dwm.suckless.org/">suckless dwm</a> - a minimalistic tiling window manager written in C. After I configured this to my liking it's hard to use anything else on my computer.
+                <br>
+                -<a href="https://www.mozilla.org/en-US/firefox/new/">librewolf</a> - a private firefox based web browser
+				<br>
+                -<a href="https://mpv.io/">mpv</a> - minimal video player
+				<br>
+                -<a href="https://www.musicpd.org/">mpd</a> - "Music Player Daemon" // plays music
+                <br>
+                -<a href="https://f-droid.org/">f-droid</a> - An app store / repository for free software on android.
+
+				
+            <br><br>
+			<img src="images/starspin.webp">other cool things
+
+                <br>
+				-<a href="https://protoweb.org/">protoweb</a>
+				- A community project to host old versions of internet websites. (You can use a modern web browser for this too).
+                <br>
+				-<a href="https://directory.fsf.org/wiki/Terminus_font">terminus font</a>
+				- my favorite font (bitmap, available in most distro repositories)
+                <br>
+                -<a href="https://www.torproject.org/">tor project</a>
+                <br>
+                -<a href="https://i2pd.website/">i2pd</a>
+
+
+            </span>
+
+
+          </div>
+          <!-- <img style="opacity: 0.5; height: 30%; position: absolute; bottom: 0px; right: 5px; -webkit-transform: scaleX(-1); transform: scaleX(-1);" src="images/yuki2.png"> -->
+        </div>
+      </div>
+
+      <!--MUSIC-->
+      <div style="background: linear-gradient(0deg, #d1c7c7 10%, #ffffff 100%, #b1afaf 10%); border: solid 2px black; width: 700px; border-radius: 15px; height: 20px; margin-top: 10px; box-shadow: 0 0 10px #d3d4d1;">
+        <!-- <p style="color: black; float: left;">friends</p>
+        <p style="color: black; float: right;">友達</p> -->
+        <span id="song-name" style="float: left; margin-left: 10px; color: #7e7e7e;">file:///pages/links.html</span>
+        <!-- <button style="color: black; float: left; border-radius: 5px; margin-left: 5px;" onclick="playPause();">| |</button> -->
+      </div>
+      <br>
+      <img src="images/worldwidewebbadge.gif">
+    </center>
+
+    
+  </body>
+</html>

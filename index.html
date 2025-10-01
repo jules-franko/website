@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>alchemilla</title>
+  </head>
+  <body>
+    <style type="text/css">
+
+      @font-face {
+        font-family: 'w95fa';
+        src: url(w95fa.woff) format("truetype"); 
+      }
+
+      @font-face {
+        font-family: 'ds';
+        src: url(Nintendo-DS-BIOS.ttf) format('woff');
+      }
+      
+      * {
+        font-family: "w95fa";
+        color: white;
+        color: black;
+      }
+
+      .window {
+        background: linear-gradient(0deg, #d1c7c7 10%, #99d675 100%, #ffffff 10%);
+        border-radius: 0px 0px 0 0;
+        text-align: center;
+        height: 30px;
+        border: 2px solid white;
+        width: 100%;
+      }
+
+      body {
+        background-color: rgb(236, 236, 236);
+        background-image: url(images/gridgray.png);
+	      /*Disables Scrolling - Lazy Fix to Whitespace*/
+       	height: 100%;
+   	    overflow-y: hidden; 
+      }
+
+      a {
+        color: red;
+
+      }
+
+      .scanlines-overlay {
+          position: absolute; /* Fixed to cover the entire viewport */
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url('images/scanlines.gif') no-repeat center center;
+          background-size: cover; /* Make sure the GIF covers the entire area */
+          pointer-events: none; /* Make sure it doesn't interfere with interactions */
+          z-index: 1000; /* Ensure it is on top of other content */
+          opacity: 0.1;
+    }
+
+    .link {
+        /*background-color: rgb(255, 255, 255);*/
+        border: 1px solid black;
+        border-radius: 5px;
+        color: #6c9e4f;
+        color: rgb(6, 104, 47);
+        /*border-color: #80b32e;
+        box-shadow: 0 0 10px #6ea516;*/
+    }
+
+    .button {
+        border: 3px solid black;
+        border-radius: 5px;
+        border-color: #80b32e;
+        box-shadow: 0 0 10px #6ea516;
+    }
+
+    </style>
+
+    <div class="scanlines-overlay" style="border:none;"></div>
+
+    <center>
+
+      <div style="background: linear-gradient(0deg, #d1c7c7 10%, #99d675 100%, #ffffff 10%); border: solid 2px black; width: 700px; border-radius: 15px; height: 20px; margin-top: 100px; box-shadow: 0 0 10px #6ea516;">
+        <span style="float: left; margin-left: 10px; color: #ffffff;">home</span>
+      </div>
+
+      <div style="border: 2px solid rgb(0, 0, 0); margin-top: 10px; height: 450px; width: 700px; border-radius: 15px 15px 15px 15px;">
+        <!--Left Bar-->
+        <div style="width: 150px; float: left; margin: 5px; border: 0px solid rgb(0, 0, 0);">
+          <div style="border: solid 2px rgb(0, 0, 0); height: 70px; border-radius: 15px 0 0 0;">
+            <div class="window" style="border: none; border-bottom: solid 2px rgb(0, 0, 0); border-radius: 15px 0px 0 0;">
+
+            </div>
+            <div>
+              <a href="pages/shrines/heather.html">
+                <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+                   HjwQ{kSa
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div style="background-color: rgb(204, 235, 188); border: solid 2px rgb(0, 0, 0); margin-top:5px; height: 355px; border-radius: 0px 0px 0px 15px; background-image: url('images/frut2.jpg'); background-size: 300px; background-position: -80px; background-image: url('images/frutiger.jpg'); background-size: 330px; background-position: -425px -290px;">
+            <div class="window" style="border: none; border-bottom: solid 2px rgb(0, 0, 0);"></div>
+            <br>
+            <br>
+          </div>
+        </div>
+
+        <style>
+            .navbut {
+                background-color: rgb(255, 255, 255); 
+                background: linear-gradient(180deg, rgb(255, 254, 254), rgb(163, 163, 163), rgb(248, 241, 241));
+            }
+        </style>
+
+        <!--Main-->
+        <div style="background-color: #ccebbc; float: right; border: 2px solid rgb(0, 0, 0); margin: 5px; width: 525px; height: 434px; border-radius: 0px 15px 15px 0; overflow-y: auto;">
+          <div style="margin: 10px; overflow-y: auto; text-align: left;">
+            <u style="color: #5f5cc5;">welcome</u> <img src="images/starspin.webp" alt=" ">
+            <br>
+            <span style="color: black;">
+              Welcome to my website. I am a student from the United States and some of my interests are geopolitics, video games, language learning, technology and programming. 
+              I speak English and like to study Spanish. I am also really interested in computers, software, and operating systems. I especially like <a href="https://www.gnu.org/gnu/incorrect-quotation.html">GNU/Linux</a>, 
+              and I usually switch between <a href="https://archlinux.org/">arch</a>, <a href="https://voidlinux.org/">void</a>, and <a href="https://artixlinux.org/">artix</a>. 
+              I'm also interested in and an enthusiast of the <a href="https://www.gnu.org/philosophy/free-sw.html">free software movement</a> and internet privacy. 
+              I enjoy <a href="images/fruting-out.png">2000s nostalgia</a>, old software design, and internet/computing history and aesthetics.</span>
+            <br><br>
+            <div style="border: solid 4px rgb(10, 96, 107); height: 100px; width: 490px; border-radius: 20px 20px 20px 20px; background-color: #f0f5ef;; text-align: left; overflow-y: auto;">
+                <div style="margin: 15px;">
+                <u style="color: #5f5cc5;">Updates</u> <img src="images/starspin.webp" alt=" ">
+                <br>
+                July 12th, 2025 - Removed all javascript and added new pages.
+                <br>
+                June 23rd, 2025 - Added <a href="http://2qqk6hbsx6vyazxhhswz3nfjny7x7ud72p7axw2js25w4javmaza.b32.i2p">I2P</a> and <a href="http://wid3rzpz2j4hkmyay4n25nwulbssisc3kh4fjw7cjuwm4yjzxpqmxcid.onion">Tor</a> Mirrors. Removed some javascript.
+                <br>
+                February 21st, 2025 - Added <a href="friends.html">friends</a>, <a href="contact.html">socials</a> pages, alt homepage.
+                <br>
+                January 30th, 2025 - Homepage Makeover, Blog Page
+                <br>
+                October 19th 2024 - Added New Things to Homepage
+                <br>
+                August 16th 2024 - New Homepage
+                <br>
+                May 21st 2024 - Completely re-coded the homepage.
+                <br>
+                May 21st 2024 - Added the AOC Records Page.
+                <br>
+                April 10th 2024 - Updated the homepage.
+                <br>
+                April 9th 2024 - Created the site.
+                </div>
+            </div>
+
+            <br>
+            <div style="border: solid 4px rgb(10, 96, 107); height: 100px; width: 490px; border-radius: 20px 20px 20px 20px; background-color: #f0f5ef;; text-align: left; overflow-y: auto;">
+                <div style="margin: 15px;">
+                    <u style="color: black;">Recent Blog Posts</u> <img src="images/starspin.webp alt=" "" alt=" ">
+                    <br>
+                    <a href="blog.html"><u style="color: #f5080c;">2/21/2025</u></a>
+                    <br>
+                    <a href="blog.html"><u style="color: #f5080c;">1/31/2025</u></a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <!--MUSIC-->
+      <!-- <div style="background: linear-gradient(0deg, #d1c7c7 10%, #ffffff 100%, #b1afaf 10%); border: solid 2px black; width: 700px; border-radius: 15px; height: 20px; margin-top: 10px; box-shadow: 0 0 10px #d3d4d1;">
+        <span id="titlescroll" style="float: left; margin-left: 10px; color: #345b96;">now playing:</span>
+        <button style="color: black; float: left; border-radius: 5px; margin-left: 5px;" onclick="backTrack();">back</button>
+        <button id="playbutton" style="color: black; float: left; border-radius: 5px; margin-left: 5px;" onclick="playMusic();">></button>
+        <button style="color: black; float: left; border-radius: 5px; margin-left: 5px;" onclick="skipSong();">skip</button>
+        <audio autoplay loop id="musicplayer" src=""></audio>
+      </div> -->
+
+      <div style="background: linear-gradient(0deg, #d1c7c7 10%, #ffffff 100%, #b1afaf 10%); border: solid 2px black; width: 700px; border-radius: 15px; height: 20px; margin-top: 10px; box-shadow: 0 0 10px #d3d4d1;">
+        <span style="float: left; margin-left: 10px; color: #8a8686;">status: aoc is life</span>
+        <span style="float: right; margin-right: 10px; color: #8a8686;">last update: July 12th, 2025</span>
+      </div>
+      
+      <img style="margin-top: 4px;" src="images/neocities-2.gif" alt="Neocities, The Web Is Yours, ">
+			<a href="https://en.wikipedia.org/wiki/Linux"><img src="images/gnu-linux.gif" alt="Made with GNU/Linux, "></a>
+			<a href="https://www.vim.org/"><img src="images/vim.gif" alt="Edited with ViM, "></a>
+			<img src="images/javascriptfree.gif" alt="Javascript Free, ">
+			<img src="images/anybrowser.gif" alt="Viewable with Any Browser">
+
+      <br>
+      <img src="images/worldwidewebbadge.gif" alt="The World Wide Web">
+
+      <!--Navigation Bar-->
+      <div style="border: solid 2px black; border-radius: 0px 15px 0px 0px; width: 150px; position: relative; left: 435px; top: -600px;">
+        <div class="window" style="border: none; border-bottom: solid 2px rgb(0, 0, 0); border-radius: 0px 15px 0 0;">
+
+        </div>
+        <div>
+          <a href="https://neocities.org/site/alchemillaotherworld">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              neocities
+            </button>
+          </a>
+          <a href="blog.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              blog
+            </button>
+          </a>
+          <a href="friends.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              friends
+            </button>
+          </a>
+          <a href="old_homepage.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              old homepages
+            </button>
+          </a>
+          <a href="pages/shrines.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              <span style="">shrines</span>
+            </button>
+          </a>
+          <a href="media/media_portal.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              <span style="text-decoration:line-through;">media</span>
+            </button>
+          </a>
+          <a href="links.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              <span style="">links</span>
+            </button>
+          </a>
+          <a href="contact.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              <span>socials</span>
+            </button>
+          </a>
+          <a href="about.html">
+            <button style="color: black; height: 38px; width: 148px; border-radius: 0 0 0 0;">
+              <span style="text-decoration:line-through;">about</span>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div style="position: relative; left: 435px; top: -615px;">
+         <br>
+         <spa style="font-size: small;">You're Visitor Number:</span>
+         <br>
+         <a href="https://www.youtube.com/watch?v=gwqiA3iazco">115</a>
+        <!-- <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=40210678&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=40210678&main=1" /></noscript> -->
+    </div>
+      <!--Navigation Bar-->
+      <div style="border: solid 2px black; border-radius: 15px 0px 0 0; width: 150px; position: relative; right: 435px; top: -1040px;">
+        <div class="window" style="border: none; border-bottom: solid 2px rgb(0, 0, 0); border-radius: 15px 0px 0 0;">
+          
+        </div>
+        <div style="background-color: #f0f5ef; border-radius: 0px 0px 0 0;">
+
+          <audio controls style="width: 50px; height: 23px; filter: grayscale(1) invert(100%); margin-top: 5px;">
+            <source src="https://files.catbox.moe/3tuswj.mp3" type="audio/mpeg">
+					  Eternal Rest - Akira Yamaoka (Audio Element)
+          </audio>
+          <br>
+
+      </div>
+      </div>
+
+      <div style="border: 2px solid rgb(10, 96, 107); border-radius: 0 0 0 15px; position: relative; right: 435px; top: -1030px; width: 150px; height: 280px; background-color: #f0f5ef; background-color: #ccebbc">
+        
+        <div style="text-align: left; padding-left: 30px;">
+          <br>
+          <img src="images/starspin.webp" alt=" ">
+          <a style="color: #304ed4;" href="https://alchemillaotherworld.neocities.org">clearnet</a>
+          <br>
+          <img src="images/starspin.webp" alt=" ">
+          <a style="color: #304ed4;" href="http://2qqk6hbsx6vyazxhhswz3nfjny7x7ud72p7axw2js25w4javmaza.b32.i2p">i2p</a>
+          <br>
+          <img src="images/starspin.webp" alt=" ">
+          <a style="color: #304ed4;" href="http://wid3rzpz2j4hkmyay4n25nwulbssisc3kh4fjw7cjuwm4yjzxpqmxcid.onion">tor</a>
+          <br>
+          <img src="images/starspin.webp" alt=" ">
+          <a style="color: #304ed4;" href="mailto:brookhavenotherworld@proton.me">email</a>
+          <br>
+          <img src="images/starspin.webp" alt=" ">
+          <a style="color: #304ed4;" href="key.gpg.asc">pgp key</a>
+          <br>
+        </div>
+
+        <br>
+        <img src="./Neocities_Site_Old/neocitieschill.gif" alt="Neocities, the web is yours, ">
+        <img src="Neocities_Site_Old/ostan.gif" alt="I love japanese cartoons!! ">
+        <img src="Neocities_Site_Old/wii.gif" alt="I love the nintendo wii!!! ">
+        <img src="Neocities_Site_Old/miku3.gif" alt="I love hatsune miku!!!">
+      </div>
+        
+
+  </body>
+</html>

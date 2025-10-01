@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'w95fa';
+    src: url(w95fa.woff) format("truetype"); 
+}
+
+@font-face {
+    font-family: 'ds';
+    src: url(Nintendo-DS-BIOS.ttf) format('woff');
+}
+
+* {
+    border: solid 1px black;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+div {
+    border: solid 0px black;
+}
+
+table {
+
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --shadow: #0e0d0d;
+    --darkest: #0e0d0d;
+}
+
+.bar {
+    text-align: right;
+    background-color: #56517c;
+    padding: 5px;
+}
+
+.webrings *{
+    border: none;
+}
+
+.bar *{
+    border: none;
+}
+
+.area * {
+    border: none;
+    text-align: left;
+}
+
+.area {
+    background-color: #9690c4;
+}
+
+.updates {
+    background-color: #9690c4;
+}
+
+.messages {
+    background-color: #9690c4;
+}
+
+.neighbors {
+    background-color: #9690c4;
+}
+
+
+.webrings {
+    background-color: #575472;
+}
+.spacer {
+    background-color: #8582a0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.spacer * {
+    border: none;
+}
+
+.header * {
+    border: none;
+    background-color: #8582a0;
+}
+
+.welcome * {
+    border: none;
+    
+}
+
+.welcome {
+    background-color: #9690c4;
+}
+
+.about {
+    background-color: #9690c4;
+}
+
+.about *{
+    border: none;
+}
+
+.navbar * {
+    border: none;
+}
+
+.top-button {
+    box-shadow: 2px 2px 0px var(--shadow), 2px 2px 0px var(--darkest);
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.header {
+    font-size: 40px;
+}
+
+body {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    border: none;
+}
+
+footer *{
+    border: none;
+}
+
+.marquee {
+    margin-top: 3px;
+}
+
+footer {
+    border: none;
+    z-index: 1100;
+    background-color: transparent;
+    position: relative;
+}
+
+
+.title {
+    border: none;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+body {
+    background: #656183;
+    
+  }
+
+html {
+    font-family: 'w95fa';
+    font-size: 16px;
+    border:none;
+    margin-top: 15px;
+}
+
+.tabla {
+    table-layout: fixed;
+    background-color: #9690c4;
+    box-shadow: 1px 1px 0px var(--shadow), 1px 1px 0px var(--darkest);
+    border-collapse: collapse;
+}
+
+.welcome,
+.about {
+    flex: 1;
+    height: 100%;
+}
+
+.navbutton {
+    background-color: rgb(183, 183, 185);
+    display: block;
+
+    color: rgb(20, 38, 95);
+    text-decoration: none;
+    text-align: center;
+    border: solid 1px black;
+    background-color: #737188;
+}
+
+.navbutton:hover {
+    background-color: rgb(183, 183, 185);
+    display: block;
+
+    color: rgb(20, 38, 95);
+    text-decoration: none;
+
+    box-shadow: inset 1px 1px 0px var(--shadow), -1px -1px 0px var(--darkest);
+}
+
+.scanlines-overlay {
+    position: absolute; /* Fixed to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/scanlines.gif') no-repeat center center;
+    background-size: cover; /* Make sure the GIF covers the entire area */
+    pointer-events: none; /* Make sure it doesn't interfere with interactions */
+    z-index: 1000; /* Ensure it is on top of other content */
+    opacity: 0.1;
+}
+
+footer .footer {
+        background-color: #656183;
+}
