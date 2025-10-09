@@ -16,7 +16,8 @@
 
 .header {
     display: flex;
-    justify-content:space-between;
+    /* justify-content:space-between; */
+    justify-content: space-evenly;
 }
 
 .header > div {
@@ -25,16 +26,18 @@
     /* margin-left: 8px;  */
     padding: 5px; 
     margin: 3px;
-    width: 300px;
+    /* width: 300px; */
+    min-width: 300px;
 }
 
 .header > div > img {
-    max-height: 330px;
+    max-width: 300px;
 }
 
 .header > div > p {
     /* font-style: italic;  */
     /* text-decoration: underline; */
+    color: rgb(104, 186, 159);
 }
 
 .header > div > h4 {
@@ -96,8 +99,24 @@ a {
     color: rgb(104, 186, 159);
 }
 
+.evil {
+    color: crimson;
+}
+
+.evil:hover {
+    color: crimson;
+}
+
+a:hover {
+    color: rgb(147, 215, 192);
+}
+
 .link-external {
     color: rgb(152, 152, 0);
+}
+
+.link-external:hover {
+    color: rgb(231, 231, 80);
 }
 
 table, tr, td {
