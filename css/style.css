@@ -12,6 +12,45 @@
     height: 100px;
 }
 
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.header > div {
+    display: inline; 
+    border: 4px double gray; 
+    /* margin-left: 8px;  */
+    padding: 5px; 
+    margin: 3px;
+    width: 300px;
+}
+
+.header > div > img {
+    max-height: 330px;
+}
+
+.header > div > p {
+    /* font-style: italic;  */
+    /* text-decoration: underline; */
+}
+
+.header > div > h4 {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.header > div > a {
+    font-style: normal; 
+    /* text-decoration: underline; */
+}
+
+/* END HEADER */
+
 h2 {
     margin: 0px;
     padding: 0px;
@@ -55,6 +94,10 @@ body {
 
 a {
     color: rgb(104, 186, 159);
+}
+
+.link-external {
+    color: rgb(152, 152, 0);
 }
 
 table, tr, td {
