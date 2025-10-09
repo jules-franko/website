@@ -1,0 +1,64 @@
+.main {
+    padding: 10px;
+    border-right: solid 2px dimgray;
+    border-bottom: solid 2px dimgray;
+}
+
+.banner {
+    background-image: url('../images/banner.jpg'); 
+    background-size: cover; 
+    background-position: 0% 65%; 
+    height: 100px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    border: 4px double gray;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    background-image: url('../images/bx.jpg');
+    font-family: serif;
+    font-size: 14px;
+    color: white;
+    width: 1000px;
+    margin: 0px;
+}
+
+.box {
+    border: 4px double gray;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+.subtext {
+    font-style: italic; 
+    color: dimgray;
+}
+
+a {
+    color: rgb(104, 186, 159);
+}
+
+table, tr, td {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    border-width: 0px;
+}
