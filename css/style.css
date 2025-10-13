@@ -6,9 +6,9 @@
 }
 
 .banner {
-    background-image: url('../images/banner.jpg'); 
+    background-image: url('../images/fall2.jpg');
     background-size: cover; 
-    background-position: 0% 65%; 
+    background-position: 0% 40%;
     height: 100px;
 }
 
@@ -41,7 +41,8 @@
 .header > div > p {
     /* font-style: italic;  */
     /* text-decoration: underline; */
-    color: rgb(104, 186, 159);
+    /*color: rgb(104, 186, 159);*/
+    color: #e88d2c;
     text-align: left;
 }
 
@@ -82,7 +83,7 @@ p {
 }
 
 body {
-    background-image: url('../images/tile.png');
+    background-image: url('../images/tile2.png');
     font-family: serif;
     font-size: 14px;
     color: white;
@@ -103,11 +104,14 @@ body {
 }
 
 a {
-    color: rgb(104, 186, 159);
+    /*color: rgb(104, 186, 159);*/
+    /*color: #45c17d;*/
+    color: #e88d2c;
 }
 
 .evil {
     color: crimson;
+    color: darkred;
 }
 
 .evil:hover {
@@ -115,11 +119,14 @@ a {
 }
 
 a:hover {
-    color: rgb(147, 215, 192);
+    /*color: rgb(147, 215, 192);*/
+    color: #f7b56f;
 }
 
 .link-external {
-    color: rgb(152, 152, 0);
+    /*color: rgb(152, 152, 0);*/
+    color: #aab255;
+    /*color:  rgb(76, 137, 33);*/
 }
 
 .link-external:hover {
