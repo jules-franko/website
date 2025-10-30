@@ -1,3 +1,8 @@
+:root {
+    --main-color: #e88d2c;
+    --ext-color: #aab255;
+}
+
 body {
     background-image: url("../images/tile2.png");
     font-family: serif;
@@ -39,7 +44,7 @@ img {
 }
 
 a {
-    color: #e88d2c;
+    color: var(--main-color);
 }
 
 a:hover {
@@ -83,7 +88,7 @@ span {
 }
 
 .link-external {
-    color: #aab255;
+    color: var(--ext-color);
 }
 
 .link-external:hover {
