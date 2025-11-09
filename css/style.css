@@ -1,109 +1,72 @@
-:root {
-    --main-color: #e88d2c;
-    --ext-color: #aab255;
+html {
+    background-image: url('../images/scatter.png')
 }
 
-body {
-    background-image: url("../images/tile2.png");
-    font-family: serif;
-    font-size: 14px;
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid black;
 }
 
-h1,h2,h4 {
-    padding: 0px;
-    margin: 0px;
-}
-
-h1 {
-    font-size: 23px;
-}
-
-h2 {
-    font-size: 16px;
-    border: 4px double dimgray;
-    width: fit-content;
-    padding: 3px;
-}
-
-img {
-    /*border: 5px double dimgray;*/
-}
-
-.banner {
-    border: 0px;
-    width: 800px;
-}
-
-.main {
-    border: 2px solid dimgray;
-    width: 800px;
+.page {
+    width: 600px;
     margin: auto;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.504);
-    color: white;
+    border: 8px double;
+    background-color: white;
+    box-shadow: 4px 4px 5px;
 }
 
-a {
-    color: var(--main-color);
+nav {
+    display: flex;
+    justify-content: center;
 }
 
-a:hover {
-    color: #f7b56f;
+nav > button {
+    width: 100%;
+    border-radius: 0px;
+}
+
+button {
+    border-radius: 0px;
 }
 
 footer {
-    color: white;
     text-align: center;
+}
+
+header,main {
+    padding: 8px;
+}
+
+.subtext {
+    padding: 0px;
+    margin: 0px;
     color: dimgray;
 }
 
-.flexbox {
-    display: flex;
-    justify-content: left;
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
 }
 
-.flexbox > div {
-    /*border: 1px solid gray;*/
-    /*margin-right: 30px;*/
-    margin: 10px;
-    /*border: double 5px dimgray;
-    padding: 5px;*/
+.post {
+    border: 5px double;
+    background-color: white;
+    width: fit-content;
+    padding: 7px;
+    box-shadow: 4px 4px 5px;
+    max-width: 500px;
+    margin-top: 25px;
 }
 
-.flexbox > div > p {
+.post > p {
     padding: 0px;
     margin: 0px;
 }
 
-span {
-    color: #e88d2c;
-}
-
-.evil {
-    color: darkred;
-}
-
-.evil:hover {
-    color: crimson;
-}
-
-.link-external {
-    color: var(--ext-color);
-}
-
-.link-external:hover {
-    color: rgb(231, 231, 80);
-}
-
-.infobox {
-    border: double 5px dimgray;
-    width: 300px;
-    height: fit-content;
-    padding: 5px;
-}
-
-.infobox > p {
-    color: #e88d2c;
-    padding: 0px;
-    margin: 0px;
+.post > img {
+    max-width: 250px;
+    max-height: 250px;
+    border: 2px solid;
 }
